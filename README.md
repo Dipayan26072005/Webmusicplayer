@@ -48,3 +48,9 @@ Shuffle and repeat features
 Volume control
 
 Theme toggle (dark/light mode)
+
+
+<img width="848" height="766" alt="image" src="https://github.com/user-attachments/assets/b16cd8b0-9a9d-4859-b670-6177fd30ef9a" />
+
+<img width="840" height="740" alt="image" src="https://github.com/user-attachments/assets/ee0bbd7a-4015-46e5-9225-6d779265ac31" />
+
