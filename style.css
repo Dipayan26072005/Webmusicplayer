@@ -1,0 +1,107 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.player {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.cover-container {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.cover-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: rotateCover 8s linear infinite;
+  animation-play-state: paused; /* only rotate when playing */
+}
+
+@keyframes rotateCover {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.song-info {
+  margin-bottom: 20px;
+}
+
+.song-info h3 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.song-info p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.controls button {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+  font-size: 28px;
+  margin: 0 12px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  background: #ffcc00;
+  color: #222;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffcc00;
+}
+
+.progress-container {
+  background: rgba(255,255,255,0.3);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+  height: 8px;
+  width: 100%;
+  position: relative;
+}
+
+.progress {
+  background: #ffcc00;
+  height: 100%;
+  width: 0%;
+  border-radius: 5px;
+  transition: width 0.1s linear;
+}
+
+.time {
+  font-size: 14px;
+  opacity: 0.9;
+}
